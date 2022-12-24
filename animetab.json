@@ -1,0 +1,13 @@
+{"_id":{"$oid":"63a721bd4eb897b7e816f088"},"aid":"1","name":"Your Name","year":"2016","rating":"8.8"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f089"},"aid":"2","name":"My Neighbor Totoro","year":"1988","rating":"10"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f08a"},"aid":"3","name":"Spirited Away","year":"2001","rating":"8.6"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f08b"},"aid":"4","name":"The Wind Rises","year":"2013","rating":"8.6"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f08c"},"aid":"5","name":"Kiki's Delivery Service","year":"1989","rating":"7.8"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f08d"},"aid":"6","name":"The Place Promised In Our Early Days","year":"2004","rating":"7.5"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f08e"},"aid":"7","name":"Whisper Of The Heart","year":"1995","rating":"8.2"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f08f"},"aid":"8","name":"Weathering With You","year":"2019","rating":"8.3"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f090"},"aid":"9","name":"Wolf Children","year":"2016","rating":"8.6"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f091"},"aid":"10","name":"The Childrens Who Chase Lost Voices","year":"2016","rating":"8.8"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f092"},"aid":"11","name":"Grave Of Fireflies","year":"1988","rating":"8.7"}
+{"_id":{"$oid":"63a721bd4eb897b7e816f093"},"aid":"12","name":"In This Corner Of World","year":"2016","rating":"8.2"}
+{"_id":{"$oid":"63a721c04eb897b7e816f094"},"aid":"13","name":"From Up On The Poppy Hill","year":"2016","rating":"8.8"}
