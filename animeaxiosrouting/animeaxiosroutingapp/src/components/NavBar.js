@@ -8,8 +8,8 @@ const NavBar=()=>{
       <li><a href="/list" >Anime List</a></li>
       <li><a href="/add" >Add</a></li>
       <li><a href="/view/:name" >Search</a></li>
-      <li><a href="aboutus" >AboutUs</a></li>
-      
+      <li><a href="/aboutus" >AboutUs</a></li>
+      <li><a href="/gallery" >Gallery</a></li>
 
     </ul>
   </div>

@@ -1,0 +1,20 @@
+/* #img1{
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 5px;
+    
+    max-width: 100%;
+    height: auto;
+} */
+#div2{
+    width: 400%;
+    width: 300%;
+    background-image: url('../images/img1.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid gray;
+    box-shadow: 5px;
+    
+    border-radius: 3px;
+    
+}

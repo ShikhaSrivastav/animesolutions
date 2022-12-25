@@ -1,6 +1,6 @@
 
 import './App.css';
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Routes, Switch} from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import AnimeHome from './components/AnimeHome';
@@ -9,6 +9,9 @@ import AddAnime from './components/AddAnime';
 import Search from './components/Search';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
+import Gallery from './components/Gallery';
+import GalleryCard from './components/GalleryCard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -17,13 +20,16 @@ function App() {
       <Header></Header>
       <NavBar></NavBar>
       <Router>
-        <Routes>
+        <Switch>
           <Route path="/home" exact component={AnimeHome}></Route>
           <Route path="/list" component={AnimeList}></Route>
           <Route path="/add" component={AddAnime} ></Route>
           <Route path="/view/:name" component={Search}></Route>
           <Route path="/aboutus" component={AboutUs}></Route>
-        </Routes>
+          <Route path="/gallery" component={Gallery}></Route>
+          <Route path="/gallerycard" component={GalleryCard}></Route>
+        
+        </Switch>
       </Router>
       <Footer></Footer>
     </div>
