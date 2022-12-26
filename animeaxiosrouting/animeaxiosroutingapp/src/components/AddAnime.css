@@ -1,0 +1,12 @@
+#box{
+    border: 5px solid cadetblue;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px cyan ;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+tr{
+    text-align: center;
+    align-items: center;
+}

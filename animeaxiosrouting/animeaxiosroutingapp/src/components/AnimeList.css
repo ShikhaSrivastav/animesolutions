@@ -1,0 +1,33 @@
+#bg-image{
+    margin: auto;
+   background-image: url('../images/img2.jpg');
+   height: 80%;
+   width:  100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   -webkit-filter: blur(2px);
+   filter: blur(2px);
+   color: white;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   display: block;
+   position: fixed;
+}
+#bg-table{
+    
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    top: 53%;
+    left:50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    width: 80%;
+    height: fit-content;
+     padding: 20px;
+    margin: 10px;
+    text-align: center; 
+} 
