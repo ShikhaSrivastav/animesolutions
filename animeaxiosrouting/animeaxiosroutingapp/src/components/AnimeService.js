@@ -13,7 +13,10 @@ class AnimeService{
     }
     addAnime(anime){
         return axios.post(this.baseUrl+"anime",anime);
-    }
+    }   
+    updateAnime(anime){
+        return axios.put(this.baseUrl+"anime/"+anime)
+    }                        
 }
 
 export default new AnimeService();

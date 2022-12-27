@@ -46,11 +46,8 @@ const AnimeList = () => {
                         <button type="button" name="btn" id="view" className="btn btn-success">View</button>
                     </Link>
                     &nbsp; &nbsp; &nbsp; &nbsp;
-                    <Link to="/addanime">
-                        <button type="button" name="btn" id="add" className="btn btn-primary">Add</button>
-                    </Link>
-                    &nbsp; &nbsp; &nbsp; &nbsp;
-                    <Link to={{ pathname: `edit/${anime.name}`, state: { anime: anime } }}>
+                
+                    <Link to={{ pathname: `edit`, state: { anime: anime } }}>
                         <button type="button" name="btn" id="edit" className="btn btn-secondary">Edit</button>
                     </Link>
                     &nbsp; &nbsp; &nbsp; &nbsp;
@@ -79,6 +76,9 @@ const AnimeList = () => {
                     </tr>
                 </table>
             </div>
+            <Link to="/add">
+                        <button type="button" name="btn" id="add" className="btn btn-primary">Add</button>
+                    </Link>
          </div>
         // </div>
     )

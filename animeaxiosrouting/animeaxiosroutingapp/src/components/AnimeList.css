@@ -15,6 +15,9 @@
    display: block;
    position: fixed;
 }
+/* #bg-image{
+    opacity: 0.5;
+} */
 #bg-table{
     
     color: white;
