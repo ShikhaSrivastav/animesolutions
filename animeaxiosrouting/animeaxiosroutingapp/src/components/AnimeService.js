@@ -8,8 +8,8 @@ class AnimeService{
     getAnime(){
         return axios.get(this.baseUrl+"anime")
     }
-    deleteAnime(id){
-        return axios.delete(this.baseUrl+"anime/" +id);
+    deleteAnime(aid){
+        return axios.delete(this.baseUrl+"anime/" +aid);
     }
     addAnime(anime){
         return axios.post(this.baseUrl+"anime",anime);

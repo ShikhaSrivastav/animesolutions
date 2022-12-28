@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import AnimeService from './AnimeService';
 import '../components/AnimeList.css'
 
 
 const AnimeList = () => {
     let [animearr, setanimearr] = useState([])
-    let [flag, setFlag] = useState(false)
+    // let [flag, setFlag] = useState(false)
+    let history = useHistory()
 
     //initialization of data
     useEffect(() => {
@@ -16,25 +17,32 @@ const AnimeList = () => {
             })
             .catch((err) => { console.log("error occured", err) })
     }, []);
-    useEffect(() => {
-        AnimeService.getAnime().
-            then((response) => {
-                setanimearr(response.data);
-            })
-            .catch((err) => { console.log("error occured", err) })
-    }, [flag]);
-    const deleteData = (id) => {
-        AnimeService.deleteAnime(id).
+
+    const deleteData = (aid) => {
+        alert("do you want to delete the data ?")
+        AnimeService.deleteAnime(aid).
             then((result) => {
                 console.log(result.data)
-                setFlag(true);
+                // setFlag(true);
+                history.push("/list");
 
             }).catch((err) => {
                 console.log("error occured");
             }
             )
     }
+    // useEffect(() => {
+    //     console.log(flag)
+    //     AnimeService.getAnime().
+    //         then((response) => {
+    //             setanimearr(response.data);
+    //             console.log(response.data)
+    //         })
+    //         .catch((err) => { console.log("error occured", err) })
+    //         console.log(flag);
+    // }, [flag]);
     const renderList = () => {
+        console.log(animearr);
         return animearr.map((anime) => {
             return <tr key={anime.aid}>
                 <td>{anime.aid}</td>
@@ -46,7 +54,7 @@ const AnimeList = () => {
                         <button type="button" name="btn" id="view" className="btn btn-success">View</button>
                     </Link>
                     &nbsp; &nbsp; &nbsp; &nbsp;
-                
+
                     <Link to={{ pathname: `edit`, state: { anime: anime } }}>
                         <button type="button" name="btn" id="edit" className="btn btn-secondary">Edit</button>
                     </Link>
@@ -74,13 +82,19 @@ const AnimeList = () => {
                             {renderList()}
                         </tbody>
                     </tr>
+                    <tr>
+                        <td>
+                            <Link to="/add">
+                                <button type="button" name="btn" id="add" className="btn btn-outline-info">Add to list</button>
+                            </Link>
+                        </td>
+                    </tr>
                 </table>
             </div>
-            <Link to="/add">
-                        <button type="button" name="btn" id="add" className="btn btn-primary">Add</button>
-                    </Link>
-         </div>
-        // </div>
+            <div id="addbtn">
+
+            </div>
+        </div>
     )
 }
 export default AnimeList;

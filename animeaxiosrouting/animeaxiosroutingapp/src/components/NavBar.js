@@ -15,7 +15,7 @@ const NavBar=()=>{
   </div>
    
    
-     <div id="first">
+     {/* <div id="first">
       <table align="right">
           <tr>
     <td>One Spot For Anime</td>   
@@ -24,7 +24,7 @@ const NavBar=()=>{
       <td  align="right">Anime</td>
   </tr>
   </table>
-    </div>
+    </div> */}
     </div>
     )
 }

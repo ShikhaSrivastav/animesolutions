@@ -6,7 +6,7 @@
     max-width: 100%;
     height: auto;
 } */
-#div2{
+/* #div2{
     width: 400%;
     width: 300%;
     background-image: url('../images/img1.jpeg');
@@ -14,7 +14,47 @@
     background-size: contain;
     border: 2px solid gray;
     box-shadow: 5px;
-    
     border-radius: 3px;
     
+} */
+.fconatiner,
+.fconatiner1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+ 
+
+}
+
+.fchild,
+.fchild1 {
+    align-items: flex-start;
+    flex-shrink: initial;
+
+}
+
+p {
+    font-size: larger;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#paradiv {
+    align-content: center;
+}
+
+#mydiv2 {
+    border: 2px solid black;
+}
+
+#mydiv3 {
+    border: 2px solid red;
+}
+#text{
+    align-self:left;
+}
+#img{
+    align-self: right;
 }

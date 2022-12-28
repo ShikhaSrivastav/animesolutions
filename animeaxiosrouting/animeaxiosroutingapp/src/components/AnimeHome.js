@@ -1,28 +1,69 @@
-import img1 from '../images/img1.jpeg'
+import img1 from '../images/img1.jpeg';
+import img2 from '../images/img2.jpg'
+import img3 from '../images/img3.jpeg'
+import img4 from '../images/img4.jpeg'
+import './AnimeHome.css';
+const AnimeHome = () => {
+    return (
+        <div>
+        
+            <div class='fcontainer' id="mydiv2" >
+                <div class='fchild' className='col-sm-12 col-md-6 col-lg-6' id="text">
+                <span>
+                    <p>
+                        The word anime — pronounced "ah-knee-may" — is an abbreviation of the word animation.
+                        In Japan, the word is used to refer to all animation.
+                        However, outside of Japan, it has become the catch-all term for animation from Japan.
 
-const AnimeHome=()=>{
-return(
-    <div>
-    <div class="container">
-    <div class="row">
-        <div id="div1" class="col-sm-6 col-md-8 col-lg-12">
-           <p>
-           The word anime — pronounced "ah-knee-may" — is an abbreviation of the word animation. 
-           In Japan, the word is used to refer to all animation. 
-           However, outside of Japan, it has become the catch-all term for animation from Japan.
+                        For decades, anime was produced by and for Japan — a local product, with a distinct look-and-feel to not just the artwork but the storytelling, the themes, and the concepts.
+                        Over the last forty years, it has become an international phenomenon, attracting millions of fans and being translated into many languages.
+                        A whole generation of viewers in the West has grown up with it and are now passing it on to their own children.
+                    </p>
+                    </span>
+                </div>
+                <span>
+                <div class='fchild' className='col-sm-12 col-md-6 col-lg-6' id="img">
+                    {/* <div id='div2' class="col-sm-12 col-md-8 col-lg-6"> */}
+                        <img src={img1} className="img1" alt="img1" id='img1' />
+                    {/* </div> */}
+                 
+                </div>
+                </span>
+                </div>
+                <div class='fcontainer1' id="mydiv3">
+                <div class='fchild1' className='col-sm-12 col-md-6 col-lg-6'>
+                <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="button" class="btn btn-primary">Get List</button>
+                    </form>
+                </div>
+                <div class='fchild1' className='col-sm-12 col-md-6 col-lg-12'>
+                    <p>Upcoming Movies</p>
+                    <div className='container'>
+                        <div className='row'>
+                            <img src={img2} class="img2" className='col-sm-12 col-md-6 col-lg-4' alt='image 2' id='img' />
+                            <img src={img3} class="img3" className='col-sm-12 col-md-6 col-lg-4' alt='image 3' id='img' />
+                            <img src={img4} class="img4" className='col-sm-12 col-md-6 col-lg-4' alt='image 4' id='img' />
+                        </div>
+                    </div>
+                </div>
+             
 
-            For decades, anime was produced by and for Japan — a local product, with a distinct look-and-feel to not just the artwork but the storytelling, the themes, and the concepts. 
-            Over the last forty years, it has become an international phenomenon, attracting millions of fans and being translated into many languages.
-            A whole generation of viewers in the West has grown up with it and are now passing it on to their own children.
-           </p>
+            </div>
         </div>
-        <div id='div2' class="col-sm-6 col-md-8 col-lg-12">
-            <img src={img1} className="img1" alt="img1" id='img1'/>
-        </div>
-        </div>
-        </div>
-    </div>
-)
+    )
 
 }
 export default AnimeHome;
