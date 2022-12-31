@@ -7,9 +7,10 @@ const NavBar=()=>{
       <li><a href="/home" >Home</a></li>
       <li><a href="/list" >Anime List</a></li>
       <li><a href="/add" >Add</a></li>
-      <li><a href="/view/:name" >Search</a></li>
+      <li><a href="/search" >Search</a></li>
       <li><a href="/aboutus" >AboutUs</a></li>
       <li><a href="/gallery" >Gallery</a></li>
+      <li><a href="/contactus" >Contact Us</a></li>
 
     </ul>
   </div>
