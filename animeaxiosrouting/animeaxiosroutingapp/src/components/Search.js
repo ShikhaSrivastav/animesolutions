@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const Search = () => {
     let [animeob, setanimeob] = useState([]);
     useEffect(() => {
-        AnimeService.getAnime().then((result) => {
+        AnimeService.getAnimeByName().then((result) => {
             console.log(result.data);
             setanimeob(result.data);
 
@@ -46,11 +46,16 @@ const Search = () => {
                         <tr>
                         <td></td>
                             <td>
-                                <Link to={{ pathname: `/view/${animeob.name}`, state: { animedata: animeob } }}>
+                                {/* <Link to={{pathname:`/view/${animeob.name}`, state:{animedata:animeob}}}> */}
+                                <Link to={{pathname:`/view/${animeob.name}`,state:{animedata:animeob}}}>
                                     <button type="button" name="btn" id="view" className="btn btn-success">Search</button>
                                 </Link>
                             </td>
                         </tr>
+                        <tr>
+
+                        </tr>
+                        <tr></tr>
                     </table>
                 </form>
             </div>

@@ -72,7 +72,10 @@ const AddAnime=()=>{
                         </td>
                     </tr>
                     <tr >
+                    <td>
+                       
                         <button type='button' id='btn' name='btn' className='btn btn-outline-primary' onClick={addAnime}>Add Anime</button>
+                        </td>
                     </tr>
                     <tr>
 

@@ -23,7 +23,7 @@ function App() {
      
       <Router>
         <Switch>
-        {/* <Route path="" exact component={AnimeHome}></Route> */}
+        <Route path="/" exact component={AnimeHome}></Route>
           <Route path="/home" exact component={AnimeHome}></Route>
           <Route path="/list" component={AnimeList}></Route>
           <Route path="/add" component={AddAnime} ></Route>

@@ -16,7 +16,10 @@ class AnimeService{
     }   
     updateAnime(anime){
         return axios.put(this.baseUrl+"anime/"+anime)
-    }                        
+    }  
+    getAnimeByName(name){
+        return axios.get(this.baseUrl+"view/"+name);
+    }                      
 }
 
 export default new AnimeService();
