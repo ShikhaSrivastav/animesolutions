@@ -2,6 +2,7 @@ import img1 from '../images/collage.png';
 import img2 from '../images/img2.jpg'
 import img3 from '../images/img3.jpeg'
 import img4 from '../images/img4.jpeg'
+import img5 from '../images/img6.jpg'
 import './AnimeHome.css';
 const AnimeHome = () => {
     return (
@@ -28,7 +29,7 @@ const AnimeHome = () => {
                     </div>
                 </div>
                 <div className="row" id="mydiv3">
-                    <div class='fchild1' className='col-sm-12 col-md-6 col-lg-6'>
+                    {/* <div class='fchild1' className='col-sm-12 col-md-6 col-lg-6'>
                         <form>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
@@ -45,14 +46,15 @@ const AnimeHome = () => {
                             </div>
                             <button type="button" class="btn btn-primary">Get List</button>
                         </form>
-                    </div>
-                    <div class='fchild1' className='col-sm-12 col-md-6 col-lg-6'>
-                        <p>Upcoming Movies</p>
+                    </div> */}
+                    <div class='fchild1'  className='col-sm-12 col-md-6 col-lg-8'>
+                        <p id="upcoming">Upcoming Movies</p>
                         <div className='container'>
                             <div className='row'>
-                                <img src={img2} class="img2" className='col-sm-12 col-md-6 col-lg-4' alt='image 2' id='img' />
-                                <img src={img3} class="img3" className='col-sm-12 col-md-6 col-lg-4' alt='image 3' id='img' />
-                                <img src={img4} class="img4" className='col-sm-12 col-md-6 col-lg-4' alt='image 4' id='img' />
+                                <img src={img2} class="img" className='col-sm-12 col-md-6 col-lg-3' alt='image 2' id='img' />
+                                <img src={img3} class="img" className='col-sm-12 col-md-6 col-lg-3' alt='image 3' id='img' />
+                                <img src={img4} class="img" className='col-sm-12 col-md-6 col-lg-3' alt='image 4' id='img' />
+                                <img src={img5} class="img" className='col-sm-12 col-md-6 col-lg-3' alt='image 4' id='img' />
                             </div>
                         </div>
                     </div>
