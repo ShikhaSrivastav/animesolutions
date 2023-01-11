@@ -6,7 +6,7 @@ import '../components/AnimeList.css'
 
 const AnimeList = () => {
     let [animearr, setanimearr] = useState([])
-    // let [flag, setFlag] = useState(false)
+    let [flag, setFlag] = useState(false)
     let history = useHistory()
 
     //initialization of data
@@ -31,16 +31,16 @@ const AnimeList = () => {
             }
             )
     }
-    // useEffect(() => {
-    //     console.log(flag)
-    //     AnimeService.getAnime().
-    //         then((response) => {
-    //             setanimearr(response.data);
-    //             console.log(response.data)
-    //         })
-    //         .catch((err) => { console.log("error occured", err) })
-    //         console.log(flag);
-    // }, [flag]);
+    useEffect(() => {
+        console.log(flag)
+        AnimeService.getAnime().
+            then((response) => {
+                setanimearr(response.data);
+                console.log(response.data)
+            })
+            .catch((err) => { console.log("error occured", err) })
+            console.log(flag);
+    }, [flag]);
     const renderList = () => {
         console.log(animearr);
         return animearr.map((anime) => {

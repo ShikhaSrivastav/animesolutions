@@ -55,9 +55,9 @@ router.post("/anime",function(req,resp){
    })
 });
 
-router.put("/anime/:aid",function(req,resp){
-    console.log(req.body);
-    Anime.findOne({aid:req.body.aid},function(err,doc){
+router.put("/anime/:name",function(req,resp){
+    console.log(req.params);
+    Anime.findOne({aid:req.params.name},function(err,doc){
         if(err){
             resp.status(500).send("no data updated");
         }
